@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+body {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 40%;
+  min-width: 30%;
+  height: 30%;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.buttons {
+  display: flex;
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s ease all;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#start-btn {
+  background-color: #228B22;
+  margin-right: 15px;
+}
+
+#pause-btn {
+  background-color: #696969;
+}
+
+#stop-btn {
+  background-color: #FF0000;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 856px) {
+  button {
+    width: 50%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #start-btn {
+    margin-right: 0px;
+  }
+  
+  #stop-btn {
+    margin-left: 0px;
+  }
+}
